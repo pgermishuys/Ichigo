@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="machine.specifications" Version="0.12.0" />
+    <PackageReference Include="Machine.Specifications.Runner.VisualStudio" Version="2.7.0" />
+    <PackageReference Include="microsoft.net.test.sdk" Version="15.7.2" />
+  </ItemGroup>
+
+</Project>

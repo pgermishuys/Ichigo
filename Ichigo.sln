@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ichigo", "Ichigo\Ichigo.csproj", "{43EA06DF-316D-46BB-A470-F07C4FD750E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ichigo", "Ichigo\Ichigo.csproj", "{43EA06DF-316D-46BB-A470-F07C4FD750E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ichigo.Tests", "Ichigo.Tests\Ichigo.Tests.csproj", "{212723D0-F2A2-485F-AFAD-3188496C6672}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{43EA06DF-316D-46BB-A470-F07C4FD750E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43EA06DF-316D-46BB-A470-F07C4FD750E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43EA06DF-316D-46BB-A470-F07C4FD750E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{212723D0-F2A2-485F-AFAD-3188496C6672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{212723D0-F2A2-485F-AFAD-3188496C6672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{212723D0-F2A2-485F-AFAD-3188496C6672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{212723D0-F2A2-485F-AFAD-3188496C6672}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

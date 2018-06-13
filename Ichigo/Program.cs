@@ -35,6 +35,8 @@ namespace Ichigo
 
             var listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
+            Console.WriteLine($"Listening on {endpoint}");
+
             try
             {
                 listener.Bind(endpoint);
@@ -81,10 +83,10 @@ namespace Ichigo
             state.Builder.Append(Encoding.UTF8.GetString(state.Buffer, 0, bytesRead));
             var content = state.Builder.ToString();
 
-            if (content.IndexOf("<EOF>", StringComparison.Ordinal) > -1)
+            if (content.IndexOf("\r\n\r\n", StringComparison.Ordinal) > -1)
             {
-                Console.WriteLine($"Read {content.Length}bytes from socket.\n Data: {content}");
-                Send(handler, content);
+                var httpRequest = HttpRequest.Parse(content);
+                Send(handler, HttpResponse.Success.ToString());
             }
             else
             {
