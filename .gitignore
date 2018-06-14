@@ -32,6 +32,7 @@ _ReSharper*/
 _NCrunch_*
 .*crunch*.local.xml
 nCrunchTemp_*
+*ncrunch*
 
 # NuGet Packages
 *.nupkg
