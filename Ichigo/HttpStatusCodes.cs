@@ -1,6 +1,6 @@
 ﻿namespace Ichigo
 {
-    public class StatusCodes
+    public class HttpStatusCodes
     {
         public const int Ok = 200;
     }

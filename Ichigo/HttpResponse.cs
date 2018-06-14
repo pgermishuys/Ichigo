@@ -30,7 +30,7 @@ namespace Ichigo
         public static StatusLine Success = new StatusLine
         {
             HTTPVersion = HttpVersions.HTTP_1_1,
-            StatusCode = StatusCodes.Ok,
+            StatusCode = HttpStatusCodes.Ok,
             ReasonPhrase = "Success",
         };
         public override string ToString()
